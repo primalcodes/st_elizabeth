@@ -1,0 +1,8 @@
+-# config_accessor :list_tag, :list_wrapper, :list_item_tag, :list_item_css, :selected_css, :current_css, :first_css, :last_css
+
+- pages = current_user.present? ? Spina::Page.active : Spina::Page.live
+- menu = Spina::Pages::MenuPresenter.new(pages.in_menu.arrange(order: :position), self, @page)
+- menu.list_wrapper_css = 'navbar-collapse collapse'
+- menu.list_tag_css = 'nav navbar-nav'
+- menu.selected_css = 'active'
+= menu.to_html
