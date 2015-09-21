@@ -38,7 +38,9 @@
                 <span class="icon-bar"></span>
               </button>
             </div>
-            <%= render 'shared/navigation' %>
+            <div id="navbar" class="navbar-collapse collapse">
+              <%= render 'shared/navigation' %>
+            </div>
           </div>
         </nav>
 
@@ -61,7 +63,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; <%=Date.today.year%> Saint Elizabeth's Parish of Ludlow, MA &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; <%=Date.today.year%> <%= current_account.name%>></p>
       </footer>
 
     </div><!-- /.container -->
@@ -71,10 +73,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
   </body>
 </html>

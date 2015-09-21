@@ -1,0 +1,8 @@
+<%- parent = @page.parent.nil? ? @page : @page.parent %>
+
+<%= parent.eql?(@page) ? 'Related' : link_to(parent.menu_title, parent.materialized_path)%>
+<ul>
+  <% parent.children.each do |child_page| -%>
+    <li><%= link_to(child_page.menu_title, child_page.materialized_path) %></li>
+  <% end -%>
+</ul>

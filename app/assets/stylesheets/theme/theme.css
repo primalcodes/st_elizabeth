@@ -1,0 +1,9 @@
+h1, h2, h3, a {
+  color: rgb(40,103,86);
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
